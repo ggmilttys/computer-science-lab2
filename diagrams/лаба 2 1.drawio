@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="fdYlHU2hx-ckrK-PgGt4">
+    <mxGraphModel dx="964" dy="671" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="Пользователь" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="Браузер" vertex="1">
+          <mxGeometry height="80" width="160" x="640" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="Frontend&#xa;(интерфейс карты)" vertex="1">
+          <mxGeometry height="80" width="200" x="1160" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="API Яндекс Карт" vertex="1">
+          <mxGeometry height="80" width="180" x="1640" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="Backend&#xa;(логика геосервиса)" vertex="1">
+          <mxGeometry height="80" width="200" x="2000" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;strokeColor=#7B68EE;fontSize=14;" value="Хранилище данных&#xa;(карты, организации)" vertex="1">
+          <mxGeometry height="80" width="200" x="2400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="endArrow=classic;html=1;" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="browser" style="endArrow=classic;html=1;" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="browser" style="endArrow=classic;html=1;" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="frontend" style="endArrow=classic;html=1;" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="frontend" style="endArrow=classic;html=1;" target="api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="api" style="endArrow=classic;html=1;" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="api" style="endArrow=classic;html=1;" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="backend" style="endArrow=classic;html=1;" target="api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="backend" style="endArrow=classic;html=1;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="db" style="endArrow=classic;html=1;" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;verticalAlign=middle;" value="Нажатие «Построить маршрут»&#xa;Ввод названия организации" vertex="1">
+          <mxGeometry height="80" width="340" x="262" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="Пользователь видит метку и маршрут" vertex="1">
+          <mxGeometry height="60" width="320" x="267" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="Событие UI:&#xa;ввод, выбор из списка" vertex="1">
+          <mxGeometry height="80" width="240" x="887" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="Отображение результата" vertex="1">
+          <mxGeometry height="60" width="220" x="890" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="HTTP GET/POST&#xa;JSON: запрос, координаты" vertex="1">
+          <mxGeometry height="80" width="280" x="1360" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="HTTP 200 OK&#xa;Обновление UI, отрисовка" vertex="1">
+          <mxGeometry height="70" width="280" x="1370" y="237" as="geometry" />
+        </mxCell>
+        <mxCell id="l7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="API-вызов,&#xa;валидация данных" vertex="1">
+          <mxGeometry height="80" width="180" x="1822" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="l8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="JSON с результатом&#xa;геометрия маршрута" vertex="1">
+          <mxGeometry height="70" width="200" x="1820" y="237" as="geometry" />
+        </mxCell>
+        <mxCell id="l9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;align=center;" value="Чтение/запись данных&#xa;поиск организации, кэш" vertex="1">
+          <mxGeometry height="70" width="240" x="2180" y="181" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
